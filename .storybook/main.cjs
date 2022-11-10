@@ -14,5 +14,12 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
+  },
+  viteFinal: (config, { cinfogType }) => {
+    if(configType == 'PRODUCTION'){
+      config.base = '/ROCKETSEAT-ignite-lab-design-system/'
+    }
+
+    return config
   }
 }
